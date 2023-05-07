@@ -1,5 +1,5 @@
 FROM centos
-RUN yum install java -y
+RUN yum install java-11-openjdk-devel -y
 RUN mkdir /opt/tomcat/
 WORKDIR /opt/tomcat
 ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.54/bin/apache-tomcat-9.0.54.tar.gz /opt/tomcat
